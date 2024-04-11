@@ -1,0 +1,13 @@
+.logo {
+  width: 45%;
+}
+
+.header {
+  background-color: #ff4655;
+  position: sticky;
+  top: 0px;
+}
+
+a:hover {
+  color: rgb(58, 58, 58) !important;
+}

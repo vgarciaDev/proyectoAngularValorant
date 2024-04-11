@@ -1,0 +1,14 @@
+<div class="container-xxl mx-auto">
+  <div class="row mt-5">
+    @for (item of mapa; track $index) {
+    <h2 class="text-light fs-1">{{ item.displayName }}</h2>
+    <div class="col-md-5 mx-auto mt-2">
+      <h5 class="text-light">{{ item.narrativeDescription }}</h5>
+      <img class="w-100" [src]="item.splash" alt="" />
+    </div>
+    <div class="col-md-7 mx-auto">
+      <img class="imagen-agente mx-auto" [src]="item.displayIcon" alt="" />
+    </div>
+    }
+  </div>
+</div>

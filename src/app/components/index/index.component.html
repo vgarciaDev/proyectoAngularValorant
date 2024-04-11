@@ -1,0 +1,118 @@
+<div class="container">
+  <h2 class="text-center mt-5 initial-text">
+    SOMOS <img class="valorant" [src]="valorant" />
+  </h2>
+  <div class="row">
+    <div class="col-4 me-5">
+      <p class="mt-4 fs-4 text-light">
+        Demostrad vuestro estilo y experiencia en un escenario competitivo
+        internacional. Dispondréis de 13 rondas para atacar y defender vuestro
+        lado mediante un manejo de armas preciso y habilidades tácticas. Y, con
+        una vida por ronda, tendréis que pensar más rápido que vuestros
+        oponentes si queréis sobrevivir. Enfrentaos a vuestros enemigos en los
+        modos competitivo y normal, además de en Combate a muerte y Fiebre de la
+        Spike.
+      </p>
+    </div>
+    <div class="col-7">
+      <div class="text-center">
+        <iframe
+          width="920"
+          height="515"
+          src="https://www.youtube.com/embed/0uVwULhAq7o?si=ooOU2WsUI8m-ZEE8&amp;controls=1&amp;start=43&amp;autoplay=true&amp;mute=1&amp;loop=1&amp;playlist=0uVwULhAq7o&amp;rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col text-center mt-5">
+      <img
+        class="img-valorant-principal"
+        [src]="imagenJuego[valorImagen]"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-3 mx-auto">
+      @if (valorImagen == 0) {
+      <img
+        class="img-valorant sombreado"
+        (click)="cambiarImagen(0)"
+        [src]="imagenJuego[0]"
+        alt=""
+      />} @else {<img
+        class="img-valorant"
+        (click)="cambiarImagen(0)"
+        [src]="imagenJuego[0]"
+        alt=""
+      />}
+    </div>
+    <div class="col-md-3 mx-auto">
+      @if (valorImagen == 1) {
+      <img
+        class="img-valorant sombreado"
+        (click)="cambiarImagen(1)"
+        [src]="imagenJuego[1]"
+        alt=""
+      />
+      } @else {
+      <img
+        class="img-valorant"
+        (click)="cambiarImagen(1)"
+        [src]="imagenJuego[1]"
+        alt=""
+      />
+      }
+    </div>
+    <div class="col-md-3 mx-auto">
+      @if (valorImagen == 2) {
+      <img
+        class="img-valorant sombreado"
+        (click)="cambiarImagen(2)"
+        [src]="imagenJuego[2]"
+        alt=""
+      />
+      } @else {
+      <img
+        class="img-valorant"
+        (click)="cambiarImagen(2)"
+        [src]="imagenJuego[2]"
+        alt=""
+      />
+      }
+    </div>
+    <div class="col-md-3 mx-auto">
+      @if (valorImagen == 3) {
+      <img
+        class="img-valorant sombreado"
+        (click)="cambiarImagen(3)"
+        [src]="imagenJuego[3]"
+        alt=""
+      />
+      } @else {<img
+        class="img-valorant"
+        (click)="cambiarImagen(3)"
+        [src]="imagenJuego[3]"
+        alt=""
+      />}
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <h3 class="text-center text-light">
+        Valorant es un shooter multijugador desarrollado y publicado por Riot
+        Games para PC. Un hero shooter gratuito de los creadores de League of
+        Legends, que se inspira en títulos como Counter-Strike y Overwatch para
+        ofrecer un juego de acción en primera persona competitivo con combates
+        cinco contra cinco, tácticos y muy intensos, diseñado para ser un
+        referente de los esports
+      </h3>
+    </div>
+  </div>
+</div>

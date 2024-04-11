@@ -1,0 +1,40 @@
+<div class="container-fluid header z-3">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" [routerLink]="['/']"
+      ><img class="logo" [src]="logo" alt=""
+    /></a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="link-hover nav-link text-light fs-4 ms-2"
+            aria-current="page"
+            [routerLink]="['']"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="link-hover nav-link text-light fs-4 ms-2"
+            [routerLink]="['agentes']"
+            >Agentes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="link-hover nav-link text-light fs-4 ms-2"
+            [routerLink]="['mapas']"
+            >Mapas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="link-hover nav-link text-light fs-4 ms-2 me-5"
+            [routerLink]="['armas']"
+            >Armas</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

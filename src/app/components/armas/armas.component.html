@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <div class="row mt-5">
+    <h2 class="mb-5 text-light fs-1">Armas del juego</h2>
+    @for (item of arrayArmas; track $index) {
+    <div class="col-4 mb-3">
+      <img class="imagen-arma" [src]="item.displayIcon" alt="" />
+      <h3 class="text-light text-center mt-2">{{ item.displayName }}</h3>
+    </div>
+    }
+  </div>
+</div>

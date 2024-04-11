@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <h2 class="text-light">Selecciona un rol</h2>
+      <select
+        class="form-select"
+        name="rol"
+        id="rol"
+        [(ngModel)]="rol"
+        (change)="onChangeRol()"
+      >
+        <option value="todas">Todos</option>
+        <option value="Iniciador">Iniciador</option>
+        <option value="Duelista">Duelista</option>
+        <option value="Centinela">Centinela</option>
+        <option value="Controlador">Controlador</option>
+      </select>
+    </div>
+  </div>
+  <div class="row mt-5">
+    @for (item of agentsArray; track $index) {
+    <div class="col-3">
+      <div class="card text-center mb-3" style="width: 18rem">
+        <div class="card-body">
+          <img [src]="item.displayIcon" alt="" />
+          <h3 class="card-title mt-2">{{ item.displayName }}</h3>
+          <p class="card-text justify">
+            {{ item.description }}
+          </p>
+          <a [routerLink]="['/agentes', item.uuid]" class="btn btn-primary"
+            >Ver Detalles</a
+          >
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

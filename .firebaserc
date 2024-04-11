@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "valorant-angular": {
+      "hosting": {
+        "trimestre3": [
+          "valorant-angular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "valorant-angular"
+  }
+}

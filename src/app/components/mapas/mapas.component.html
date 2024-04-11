@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-5">
+    <h2 class="fs-1 text-light mb-4">Mapas del juego</h2>
+    @for (item of arrayMapas; track $index) {
+    <div class="col-3">
+      <div class="card text-center mb-3" style="width: 18rem">
+        <div class="card-body">
+          <img class="imagen-mapa" [src]="item.splash" alt="" />
+          <h3 class="card-title mt-2">{{ item.displayName }}</h3>
+          <p class="card-text justify">
+            {{ item.description }}
+          </p>
+          <a [routerLink]="['/mapas', item.uuid]" class="btn btn-primary"
+            >Ver Detalles</a
+          >
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

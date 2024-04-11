@@ -1,0 +1,26 @@
+.initial-text {
+  font-size: 150px;
+  font-family: "Tungsten-Bold";
+  color: white;
+}
+
+p {
+  text-align: justify;
+}
+
+.valorant {
+  width: 60%;
+}
+
+.img-valorant {
+  width: 300px;
+  cursor: pointer;
+}
+
+.sombreado {
+  opacity: 0.6;
+}
+
+.img-valorant-principal {
+  width: 1280px;
+}

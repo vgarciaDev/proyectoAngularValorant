@@ -1,0 +1,42 @@
+<div class="container-xxl mx-auto">
+  <div class="row mt-5">
+    @for (item of agentsArray; track $index) {
+    <h2 class="text-light fs-1">{{ item.displayName }}</h2>
+    <div class="col-md-5 mx-auto mt-2">
+      <h5 class="text-light">{{ item.description }}</h5>
+      <h3 class="text-light mt-5">HABILIDADES:</h3>
+      <img
+        class="imagen-habilidad mt-3"
+        [src]="item.abilities[0].displayIcon"
+        alt=""
+      />
+      <h4 class="text-light">{{ item.abilities[0].displayName }}</h4>
+      <p class="text-light">{{ item.abilities[0].description }}</p>
+      <img
+        class="imagen-habilidad mt-3"
+        [src]="item.abilities[1].displayIcon"
+        alt=""
+      />
+      <h4 class="text-light">{{ item.abilities[1].displayName }}</h4>
+      <p class="text-light">{{ item.abilities[1].description }}</p>
+      <img
+        class="imagen-habilidad mt-3"
+        [src]="item.abilities[2].displayIcon"
+        alt=""
+      />
+      <h4 class="text-light">{{ item.abilities[2].displayName }}</h4>
+      <p class="text-light">{{ item.abilities[2].description }}</p>
+      <img
+        class="imagen-habilidad mt-3"
+        [src]="item.abilities[3].displayIcon"
+        alt=""
+      />
+      <h4 class="text-light">{{ item.abilities[3].displayName }}</h4>
+      <p class="text-light">{{ item.abilities[3].description }}</p>
+    </div>
+    <div class="col-md-7 mx-auto">
+      <img class="imagen-agente mx-auto" [src]="item.bustPortrait" alt="" />
+    </div>
+    }
+  </div>
+</div>
