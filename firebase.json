@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "valorant-angular",
-    "public": "dist/trimestre3",
+    "public": "dist/trimestre3/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
